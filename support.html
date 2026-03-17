@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,31 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support - Meredith McClain Apps</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 700px; margin: 0 auto; padding: 40px 20px; color: #333; line-height: 1.6; }
-        h1 { color: #E8559A; }
-        h2 { color: #555; margin-top: 30px; }
-        a { color: #E8559A; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #FFF8FA;
+            color: #2D1B33;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #E84393;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2D1B33;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+        p {
+            margin-bottom: 14px;
+            font-size: 15px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #7C5A8A;
+            margin-bottom: 32px;
+        }
+        .app-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin: 16px 0;
+            border: 1px solid #F8BBD0;
+        }
+        .app-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #E84393;
+            margin-bottom: 8px;
+        }
+        .app-card p {
+            font-size: 14px;
+            color: #7C5A8A;
+            margin-bottom: 8px;
+        }
+        .email-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #E84393, #A855F7);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            margin-top: 24px;
+        }
+        .email-btn:hover {
+            opacity: 0.9;
+        }
+        .faq-item {
+            margin-bottom: 16px;
+        }
+        .faq-item strong {
+            display: block;
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+        .faq-item p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 0;
+        }
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #F8BBD0;
+            font-size: 13px;
+            color: #7C5A8A;
+        }
+        a { color: #E84393; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>App Support</h1>
-    <p>Thank you for using my apps! If you need help or have feedback, I'd love to hear from you.</p>
+    <div class="container">
+        <h1>App Support</h1>
+        <p class="subtitle">Meredith McClain Apps</p>
 
-    <h2>Apps</h2>
-    <ul>
-        <li><strong>FIRE: Retirement Calculator</strong> — Plan your path to financial independence</li>
-        <li><strong>PinkShrink: Photo Compressor</strong> — Compress photos and save storage space</li>
-    </ul>
+        <p>Need help with one of my apps? I'm a solo developer and I read every email. I'll get back to you as fast as I can.</p>
 
-    <h2>Contact</h2>
-    <p>For support, bug reports, or feature requests:</p>
-    <p><strong>Email:</strong> <a href="mailto:mmcclai9@gmail.com">meredithmcclain@gmail.com</a></p>
+        <div class="app-card">
+            <h3>🔥 MoneyBloom: FIRE Calculator</h3>
+            <p>Financial independence and early retirement calculator. Plan your FIRE journey with projections, milestones, and What-If scenarios.</p>
+        </div>
 
-    <h2>FAQ</h2>
-    <p><strong>Is the app really free?</strong><br>Yes! No ads, no subscriptions, no hidden paywalls.</p>
-    <p><strong>Is my data private?</strong><br>All data stays on your device. Nothing is uploaded or shared. See our <a href="index.html">Privacy Policy</a>.</p>
-    <p><strong>Found a bug?</strong><br>Please email me with a description of the issue and I'll fix it as soon as possible.</p>
+        <div class="app-card">
+            <h3>🎖️ AFT Calculator: Army Fitness</h3>
+            <p>Army Fitness Test calculator with official scoring tables, gap analysis, body composition (WHtR), tools for test day, and NCO grader mode. Updated for 2026 standards.</p>
+        </div>
 
-    <p style="margin-top: 40px; color: #888; font-size: 13px;">&copy; 2026 Meredith McClain. All rights reserved.</p>
+        <h2>Contact</h2>
+        <p>For bug reports, feature requests, or any questions:</p>
+        <a href="mailto:mmcclai9@gmail.com?subject=App%20Support" class="email-btn">📧 mmcclai9@gmail.com</a>
+
+        <h2 style="margin-top: 40px;">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <strong>Where is my data stored?</strong>
+            <p>All data is stored locally on your device. Nothing is sent to any server. If you delete the app, your data is gone.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Do I need an account?</strong>
+            <p>No. None of our apps require a login, account, or registration.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Are the AFT scoring tables accurate?</strong>
+            <p>Yes. Scoring data comes directly from the official army.mil AFT Scoring Scales PDF (Approved 15 May 2025, Effective 1 June 2025). Body composition uses the DoD Waist-to-Height Ratio standard effective January 1, 2026.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Can I transfer my data to a new phone?</strong>
+            <p>If you use iCloud backup and restore your new phone from that backup, your app data should transfer automatically.</p>
+        </div>
+
+        <div class="faq-item">
+            <strong>Is the app affiliated with the U.S. Army?</strong>
+            <p>No. These apps are independently developed and are not affiliated with, endorsed by, or connected to the U.S. Army or Department of Defense.</p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Meredith McClain. All rights reserved.</p>
+            <p><a href="./">Privacy Policy</a></p>
+        </div>
+    </div>
 </body>
 </html>
